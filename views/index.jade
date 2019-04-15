@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    section
+      .title
+        .items
+          .message
+            h1
+              | Busca el
+              strong PLACER  
+              |  de tu
+              strong
+                br
+                |  VIDA
+          .boton-ubicame
+            a(data-scroll='', href='#map')
+              button
+                img(style='margin-bottom:5px;border-radius:2px;display:inline-block;', width='20', height='20', src='/images/indicador-gps-fijo.png', alt='')
+                | Ubícame
+    section#map
+      .map#map-restaurants
+block js
+    script(type="text/javascript",src="/bower_components/jquery/dist/jquery.min.js")
+    script(type="text/javascript",src="/bower_components/smooth-scroll/dist/js/smooth-scroll.min.js")
+    script(type="text/javascript",src="/javascripts/main.js")
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDCuDW4JFxNCcgfTGxEdI-bwSmPtdW6ubI&callback=initMap', async='', defer='')
