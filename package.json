@@ -33,11 +33,12 @@
     "xss": "^0.2.16"
   },
   "engines": {
-    "node": "8.11.4"
+    "node": "8.11.4",
+    "npm": "6.8.0"
   },
   "keywords": [
     "example",
     "heroku"
   ],
- 
+
 }
