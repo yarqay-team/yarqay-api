@@ -7,7 +7,7 @@ var comments = require('./comments');
 var userController = require('../controllers/userController');
 
 router.get('/', function(req, res, next) {
-  res.send('API YARQAY GAAAAA')
+  res.send('API YARQAY')
 });
 router.post('/login',userController.loginUser);
 router.post('/login/restaurant',userController.loginRestaurant);
